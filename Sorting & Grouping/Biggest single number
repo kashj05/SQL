@@ -1,0 +1,7 @@
+# Write your MySQL query statement below
+SELECT (
+SELECT num
+FROM mynumbers
+GROUP BY num HAVING count(num) =1
+ORDER BY num DESC limit 1 )
+as num
